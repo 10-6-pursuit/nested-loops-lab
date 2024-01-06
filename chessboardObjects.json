@@ -1,0 +1,82 @@
+[
+  [
+    { "piece": null, "positionX": 0, "positionY": 0, "color": "light" },
+    { "piece": null, "positionX": 0, "positionY": 1, "color": "dark" },
+    { "piece": null, "positionX": 0, "positionY": 2, "color": "light" },
+    { "piece": null, "positionX": 0, "positionY": 3, "color": "dark" },
+    { "piece": null, "positionX": 0, "positionY": 4, "color": "light" },
+    { "piece": null, "positionX": 0, "positionY": 5, "color": "dark" },
+    { "piece": null, "positionX": 0, "positionY": 6, "color": "light" },
+    { "piece": null, "positionX": 0, "positionY": 7, "color": "dark" }
+  ],
+  [
+    { "piece": null, "positionX": 1, "positionY": 0, "color": "dark" },
+    { "piece": null, "positionX": 1, "positionY": 1, "color": "light" },
+    { "piece": null, "positionX": 1, "positionY": 2, "color": "dark" },
+    { "piece": null, "positionX": 1, "positionY": 3, "color": "light" },
+    { "piece": null, "positionX": 1, "positionY": 4, "color": "dark" },
+    { "piece": null, "positionX": 1, "positionY": 5, "color": "light" },
+    { "piece": null, "positionX": 1, "positionY": 6, "color": "dark" },
+    { "piece": null, "positionX": 1, "positionY": 7, "color": "light" }
+  ],
+  [
+    { "piece": null, "positionX": 2, "positionY": 0, "color": "light" },
+    { "piece": null, "positionX": 2, "positionY": 1, "color": "dark" },
+    { "piece": null, "positionX": 2, "positionY": 2, "color": "light" },
+    { "piece": null, "positionX": 2, "positionY": 3, "color": "dark" },
+    { "piece": null, "positionX": 2, "positionY": 4, "color": "light" },
+    { "piece": null, "positionX": 2, "positionY": 5, "color": "dark" },
+    { "piece": null, "positionX": 2, "positionY": 6, "color": "light" },
+    { "piece": null, "positionX": 2, "positionY": 7, "color": "dark" }
+  ],
+  [
+    { "piece": null, "positionX": 3, "positionY": 0, "color": "dark" },
+    { "piece": null, "positionX": 3, "positionY": 1, "color": "light" },
+    { "piece": null, "positionX": 3, "positionY": 2, "color": "dark" },
+    { "piece": null, "positionX": 3, "positionY": 3, "color": "light" },
+    { "piece": null, "positionX": 3, "positionY": 4, "color": "dark" },
+    { "piece": null, "positionX": 3, "positionY": 5, "color": "light" },
+    { "piece": null, "positionX": 3, "positionY": 6, "color": "dark" },
+    { "piece": null, "positionX": 3, "positionY": 7, "color": "light" }
+  ],
+  [
+    { "piece": null, "positionX": 4, "positionY": 0, "color": "light" },
+    { "piece": null, "positionX": 4, "positionY": 1, "color": "dark" },
+    { "piece": null, "positionX": 4, "positionY": 2, "color": "light" },
+    { "piece": null, "positionX": 4, "positionY": 3, "color": "dark" },
+    { "piece": null, "positionX": 4, "positionY": 4, "color": "light" },
+    { "piece": null, "positionX": 4, "positionY": 5, "color": "dark" },
+    { "piece": null, "positionX": 4, "positionY": 6, "color": "light" },
+    { "piece": null, "positionX": 4, "positionY": 7, "color": "dark" }
+  ],
+  [
+    { "piece": null, "positionX": 5, "positionY": 0, "color": "dark" },
+    { "piece": null, "positionX": 5, "positionY": 1, "color": "light" },
+    { "piece": null, "positionX": 5, "positionY": 2, "color": "dark" },
+    { "piece": null, "positionX": 5, "positionY": 3, "color": "light" },
+    { "piece": null, "positionX": 5, "positionY": 4, "color": "dark" },
+    { "piece": null, "positionX": 5, "positionY": 5, "color": "light" },
+    { "piece": null, "positionX": 5, "positionY": 6, "color": "dark" },
+    { "piece": null, "positionX": 5, "positionY": 7, "color": "light" }
+  ],
+  [
+    { "piece": null, "positionX": 6, "positionY": 0, "color": "light" },
+    { "piece": null, "positionX": 6, "positionY": 1, "color": "dark" },
+    { "piece": null, "positionX": 6, "positionY": 2, "color": "light" },
+    { "piece": null, "positionX": 6, "positionY": 3, "color": "dark" },
+    { "piece": null, "positionX": 6, "positionY": 4, "color": "light" },
+    { "piece": null, "positionX": 6, "positionY": 5, "color": "dark" },
+    { "piece": null, "positionX": 6, "positionY": 6, "color": "light" },
+    { "piece": null, "positionX": 6, "positionY": 7, "color": "dark" }
+  ],
+  [
+    { "piece": null, "positionX": 7, "positionY": 0, "color": "dark" },
+    { "piece": null, "positionX": 7, "positionY": 1, "color": "light" },
+    { "piece": null, "positionX": 7, "positionY": 2, "color": "dark" },
+    { "piece": null, "positionX": 7, "positionY": 3, "color": "light" },
+    { "piece": null, "positionX": 7, "positionY": 4, "color": "dark" },
+    { "piece": null, "positionX": 7, "positionY": 5, "color": "light" },
+    { "piece": null, "positionX": 7, "positionY": 6, "color": "dark" },
+    { "piece": null, "positionX": 7, "positionY": 7, "color": "light" }
+  ]
+]

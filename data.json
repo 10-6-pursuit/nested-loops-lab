@@ -1,0 +1,249 @@
+[
+  {
+    "name": "Dolly Parton",
+    "albums": [
+      {
+        "title": "Hello, I'm Dolly",
+        "year": 1967,
+        "songs": [
+          "I Don't Want to Throw Rice",
+          "Put It Off Until Tomorrow",
+          "I Wasted My Tears",
+          "Fuel to the Flame",
+          "The Company You Keep",
+          "The Little Things"
+        ]
+      },
+      {
+        "title": "Coat of Many Colors",
+        "year": 1971,
+        "songs": [
+          "Coat of Many Colors",
+          "My Blue Tears",
+          "The Mystery of the Mystery"
+        ]
+      },
+      {
+        "title": "Jolene",
+        "year": 1974,
+        "songs": [
+          "Jolene",
+          "River of Happiness",
+          "I Will Always Love You",
+          "It Must Be You"
+        ]
+      },
+      {
+        "title": "Love is Like a Butterfly",
+        "year": 1974,
+        "songs": [
+          "Love is Like a Butterfly",
+          "My Eyes Can Only See You",
+          "Once Upon a Memory"
+        ]
+      },
+      {
+        "title": "9 to 5 and Odd Jobs",
+        "year": 1980,
+        "songs": [
+          "9 to 5",
+          "The House of the Rising Sun",
+          "Working Girl",
+          "Dark as a Dungeon",
+          "Everyday People"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mojave 3",
+    "albums": [
+      {
+        "title": "Ask Me Tomorrow",
+        "year": 1995,
+        "songs": [
+          "Love Songs on the Radio",
+          "Sarah",
+          "Tomorrow's Taken",
+          "Candle Song 3",
+          "Where is the Love",
+          "Pictures"
+        ]
+      },
+      {
+        "title": "Out of Tune",
+        "year": 1998,
+        "songs": [
+          "Who Do You Love",
+          "Some Kinda Angel",
+          "Keep it All Hid",
+          "Baby's Coming Home",
+          "To Whom Should I Write"
+        ]
+      },
+      {
+        "title": "Excuses for Travelers",
+        "year": 2000,
+        "songs": [
+          "My Life in Art",
+          "Return to Sender",
+          "Any Day Will Be Fine",
+          "Prayer for the Paranoid"
+        ]
+      },
+      {
+        "title": "Spoon and Rafter",
+        "year": 2003,
+        "songs": ["Bluebird of Happiness", "Billy Oddity", "Between the Bars"]
+      },
+      {
+        "title": "Puzzles Like You",
+        "year": 2006,
+        "songs": [
+          "Puzzles Like You",
+          "Running with Your Eyes Closed",
+          "Most Days",
+          "Big Star Baby",
+          "Ghostship Waiting",
+          "You Said it Before",
+          "To Hold Your Tiny Toes",
+          "The Mutineer"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Neko Case",
+    "albums": [
+      {
+        "title": "The Tigers Have Spoken",
+        "year": 2004,
+        "songs": [
+          "If You Knew",
+          "Soulful Shade of Blue",
+          "Hex",
+          "The Train from Kansas City",
+          "Loretta",
+          "Favorite",
+          "This Little Light",
+          "Wayfaring Stranger"
+        ]
+      },
+      {
+        "title": "Fox Confessor Brings the Flood",
+        "year": 2006,
+        "songs": [
+          "Margaret vs. Pauline",
+          "Star Witness",
+          "Hold on, Hold On",
+          "A Widow's Toast",
+          "That Teenage Feeling",
+          "Dirty Knife",
+          "Maybe Sparrow",
+          "At Last"
+        ]
+      },
+      {
+        "title": "Middle Cyclone",
+        "year": 2000,
+        "songs": [
+          "This Tornado Loves You",
+          "Polar Nettles",
+          "Never Turn Your Back on Mother Earth",
+          "Fever",
+          "Magpie to the Morning",
+          "Don't Forget Me"
+        ]
+      },
+      {
+        "title": "The Worse Things Get, the Harder I Fight, the More I Love You",
+        "year": 2000,
+        "songs": [
+          "Wild Creatures",
+          "Night Still Comes",
+          "Man",
+          "I'm From Nowhere",
+          "Bracing for Sunday",
+          "Calling Cards",
+          "City Swans",
+          "Where Did I Leave that Fire?"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Destroyer",
+    "albums": [
+      {
+        "title": "Streethawk",
+        "year": 2001,
+        "songs": [
+          "The Bad Arts",
+          "The Sublimation Hour",
+          "The Very Modern Dance",
+          "Helena",
+          "Streethawk II"
+        ]
+      },
+      {
+        "title": "Trouble in Dreams",
+        "year": 2008,
+        "songs": [
+          "Blue Flower/Blue Flame",
+          "Dark Leaves From a Thread",
+          "The State",
+          "Foam Hands",
+          "My Favorite Year",
+          "Introducing Angels",
+          "Rivers",
+          "Plaza Trinidad"
+        ]
+      },
+      {
+        "title": "Destroyer's Rubies",
+        "year": 2011,
+        "songs": [
+          "Rubies",
+          "European Oils",
+          "Painter In Your Pocket",
+          "3000 Flowers",
+          "Watercolors into the Ocean"
+        ]
+      },
+      {
+        "title": "Have We Met",
+        "year": 2020,
+        "songs": [
+          "The Raven",
+          "Cue Synthesizer",
+          "University Hill",
+          "Have We Met",
+          "The Man in Black's Blues"
+        ]
+      },
+      {
+        "title": "Five Spanish Songs",
+        "year": 2013,
+        "songs": [
+          "Maria de las Nieves",
+          "Del montón",
+          "El Rito",
+          "Babieca",
+          "Bye Bye"
+        ]
+      },
+      {
+        "title": "Labyrinthitis",
+        "year": 2022,
+        "songs": [
+          "It's In Your Heart Now",
+          "June",
+          "All My Pretty Dresses",
+          "Tintoretto, It's for You",
+          "The States",
+          "The Last Song"
+        ]
+      }
+    ]
+  }
+]
