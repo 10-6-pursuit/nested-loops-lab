@@ -8,7 +8,9 @@ const musicData = require("./data.json");
  */
 function getAllArtistNames(artists) {
   const artistNames = [];
+  // iterate through array of artist objects
   for (let artist of artists) {
+    // for each artist object, push the name values with the `name` key
     artistNames.push(artist.name);
   }
   return artistNames;
@@ -19,7 +21,18 @@ function getAllArtistNames(artists) {
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of each album title from all the artists.
  */
-function getAllAlbumTitles(artists) {}
+function getAllAlbumTitles(artists) {
+  const albumTitles = [];
+  // iterate through array of artist objects
+  for (let artist of artists) {
+    //  for each artist object, iterate through array of albums
+    for (let album of artist.albums) {
+      // for each album object, push the values with the `title` key
+      albumTitles.push(album.title)
+    }
+  }
+  return albumTitles;
+}
 
 /**
  *  This function should return an array of the all the song names from the musicData JSON.
