@@ -31,7 +31,19 @@ return outPut
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of every song from the JSON file.
  */
-function getAllSongs(artists) {}
+function getAllSongs(artists) {
+  let array = []
+  for (let artist of artists){
+    let album = artist.albums
+    for (let tl of album){
+       let output = tl.songs
+        for (let songs of output){
+          array.push(songs)
+      }
+    }
+  }
+  return array
+}
 
 /**
  * Create a string that represents a checkboard. See the instructions.md for more details
