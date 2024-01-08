@@ -1,6 +1,6 @@
 const musicData = require("./data.json");
 // console.log(musicData);
-
+// 
 /**
  * This function should return an array of just the artist names from the musicData JSON.
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
