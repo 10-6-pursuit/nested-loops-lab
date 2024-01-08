@@ -59,13 +59,23 @@ function getAllSongs(artists) {
  * @return {string} a string of spaces and # that represent a checkerboard that is 8 x 8.
  */
 function simpleCheckerBoard() {
-  const string = " # # # #\n# # # # \n".repeat(4)
-  return string;
+  // const string = " # # # #\n# # # # \n".repeat(4)
+  // return string
+  let checkerBoard = '';
+  const rows = 8;
+  const cols = 8;
+  // iterate through rows (height)
+  for (let i = 0; i < rows; i++) {
+    // populate rows
+    //    if row index is odd concat '# # # # \n' to res array if not concat ' # # # #\n'
+    checkerBoard += (i % 2) ? '# # # # \n' : ' # # # #\n';
+  }
+  return checkerBoard;
 }
 
 /**
  * Create a string that represents a checkboard. See the instructions.md for more details
- * @param {number} [rows = 4 ]- An integer that represents the number of rows to create.
+ * @param {number} [rows = 4 ] - An integer that represents the number of rows to create.
  * @param {number} [cols = 4] - An integer that represents the number of columns to create.
  * @return {string} a string of spaces and # that represent a checkerboard that has the appropriate number of rows on columns based on the parameters passed.
  */
@@ -84,8 +94,6 @@ function dynamicCheckerBoard(rows = 4, cols = 4) {
   }
   return checkerBoard;
 }
-
-console.log(dynamicCheckerBoard(4,4));
 
 /**
  * Create an array of square objects that represent a chessboard. Please see instructions for more details
