@@ -19,7 +19,15 @@ function getAllArtistNames(artists) {
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of each album title from all the artists.
  */
-function getAllAlbumTitles(artists) {}
+function getAllAlbumTitles(artists) {
+  let artistAlbum = [];
+  for (let artist of artists) {
+    for (let album of artist.albums) {
+      artistAlbum.push(album.title)
+    }
+  }
+  return artistAlbum;
+}
 
 /**
  *  This function should return an array of the all the song names from the musicData JSON.
@@ -29,13 +37,13 @@ function getAllAlbumTitles(artists) {}
 function getAllSongs(artists) {}
 
 /**
- * Create a string that represents a checkboard. See the instructions.md for more details
+ * Create a string that represents a checkerboard. See the instructions.md for more details
  * @return {string} a string of spaces and # that represent a checkerboard that is 8 x 8.
  */
 function simpleCheckerBoard() {}
 
 /**
- * Create a string that represents a checkboard. See the instructions.md for more details
+ * Create a string that represents a checkerboard. See the instructions.md for more details
  * @param {number} [rows = 4 ]- An integer that represents the number of rows to create.
  * @param {number} [cols = 4] - An integer that represents the number of columns to create.
  * @return {string} a string of spaces and # that represent a checkerboard that has the appropriate number of rows on columns based on the parameters passed.
