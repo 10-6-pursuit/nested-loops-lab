@@ -48,7 +48,7 @@ Follow the on-screen prompts to exit out of the constant runner.
 
 ## Function Descriptions & Examples
 
-While most of the functions should have enough information in the comments to create the needed functionality, some additonal information is provided about some of the functions below.
+While most of the functions should have enough information in the comments to create the needed functionality, some additional information is provided about some of the functions below.
 
 ### getAllArtistNames()
 
@@ -85,7 +85,7 @@ One artist object has the following shape:
 
 There can be any number of artists, any artist can have any number of albums and any album can have any number of songs.
 
-### simpleChekcerBoard()
+### simpleCheckerBoard()
 
 The `simpleCheckerBoard()` function should return a string of spaces and `#` symbols that represent a checkerboard. A checkerboard is 8 x 8 squares. The light squares should be represented by `" "` and the dark squares should be represented by `#`. To create a new line the characters `\n` should be added.
 
