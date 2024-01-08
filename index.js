@@ -8,8 +8,8 @@ const musicData = require("./data.json");
  */
 function getAllArtistNames(artists) {
   let nameOfArtists = [];
-  for (let artist of artists) {
-    nameOfArtists.push(artist.name);
+  for (let data of artists) {
+    nameOfArtists.push(data.name);
   }
   return nameOfArtists;
 }
@@ -21,9 +21,9 @@ function getAllArtistNames(artists) {
  */
 function getAllAlbumTitles(artists) {
   let artistAlbum = [];
-  for (let artist of artists) {
-    for (let album of artist.albums) {
-      artistAlbum.push(album.title)
+  for (let data of artists) {
+    for (let albums of data.albums) {
+      artistAlbum.push(albums.title)
     }
   }
   return artistAlbum;
@@ -34,7 +34,17 @@ function getAllAlbumTitles(artists) {
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of every song from the JSON file.
  */
-function getAllSongs(artists) {}
+function getAllSongs(artists) {
+  let allSongs = [];
+  for (let data of artists) {
+    for (let albums of data.albums) {
+      for (let song of albums.songs) {
+        allSongs.push(song);
+      }
+    }
+  }
+  return allSongs;
+}
 
 /**
  * Create a string that represents a checkerboard. See the instructions.md for more details
