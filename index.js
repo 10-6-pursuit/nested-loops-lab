@@ -49,8 +49,21 @@ function getAllSongs(artists) {
  * Create a string that represents a checkboard. See the instructions.md for more details
  * @return {string} a string of spaces and # that represent a checkerboard that is 8 x 8.
  */
-function simpleCheckerBoard() {}
-
+function simpleCheckerBoard(){
+  let string = ""
+  for (let i = 0; i <=7; i++){
+    string += ""
+    for (let j = 0; j <=0 ; j++){
+      if(i % 2 === 1){
+      string += "# # # # "
+      } else {
+        string += " # # # #"
+      }
+    }
+    string += "\n"
+  }
+    return string
+  }
 /**
  * Create a string that represents a checkboard. See the instructions.md for more details
  * @param {number} [rows = 4 ]- An integer that represents the number of rows to create.
