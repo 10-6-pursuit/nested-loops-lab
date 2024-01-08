@@ -69,7 +69,24 @@ function simpleCheckerBoard() {
  * @param {number} [cols = 4] - An integer that represents the number of columns to create.
  * @return {string} a string of spaces and # that represent a checkerboard that has the appropriate number of rows on columns based on the parameters passed.
  */
-function dynamicCheckerBoard() {}
+function dynamicCheckerBoard(rows = 4, cols = 4) {
+  let checkerBoard = '';
+  // iterate through rows (height)
+  for (let i = 0; i < rows; i++) {
+    // iterate through spaces in row ()
+    for (let j = 0; j < cols; j++) {
+      // populate spaces
+      //    if sum of indices is odd concat '#' to res array if not concat ' '
+      console.log(`dynamic checker`, i, j);
+      checkerBoard += ((i + j) % 2) ? '#' : ' ';
+    }
+    // after spaces are populated concat `\n`
+    checkerBoard += '\n';
+  }
+  return checkerBoard;
+}
+
+console.log(dynamicCheckerBoard(4,4));
 
 /**
  * Create an array of square objects that represent a chessboard. Please see instructions for more details
