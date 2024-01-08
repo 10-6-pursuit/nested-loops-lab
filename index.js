@@ -77,7 +77,6 @@ function dynamicCheckerBoard(rows = 4, cols = 4) {
     for (let j = 0; j < cols; j++) {
       // populate spaces
       //    if sum of indices is odd concat '#' to res array if not concat ' '
-      console.log(`dynamic checker`, i, j);
       checkerBoard += ((i + j) % 2) ? '#' : ' ';
     }
     // after spaces are populated concat `\n`
@@ -86,13 +85,37 @@ function dynamicCheckerBoard(rows = 4, cols = 4) {
   return checkerBoard;
 }
 
-console.log(dynamicCheckerBoard(4,4));
 
 /**
  * Create an array of square objects that represent a chessboard. Please see instructions for more details
  * @return {Object[]} An array of square objects that have the following properties: piece, positionX, positionY, and color.
  */
-function createChessBoard() {}
+function createChessBoard() {
+  // create board coordinate alpha reference array
+  // const boardAlpha = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+  const chessBoard = [];
+  // iterate through height of board
+  for (let i = 0; i < 8; i++) {
+    // create new empty boardrow for each iteration
+    let boardRow = [];
+    // iterate through spaces
+    for (let j = 0; j < 8; j++) {
+      // create new empty space object
+      let boardSpace = {
+        piece: null,
+        positionX: i,
+        positionY: j,
+        // squareName: `${boardAlpha[i]}${j+1}`,
+        color: ((i + j) % 2) ? 'dark' : 'light', 
+      };
+      // push space object to boardRow;
+      boardRow.push(boardSpace);      
+    }
+    // push completed boardRow to chessBoard
+    chessBoard.push(boardRow);
+  }
+  return chessBoard;
+}
 
 /**
  * Update a square on the board to have a chess piece "on" it
@@ -101,7 +124,9 @@ function createChessBoard() {}
  * @param {number} column - An array of guest objects. See the instructions and tests for a full breakdown of what is in each guest object.
  * @return {Object{}}  The modified board array of objects.
  */
-function addPieceToChessBoard(piece, row, column) {}
+function addPieceToChessBoard(piece, row, column) {
+  return 
+}
 
 module.exports = {
   getAllArtistNames,
