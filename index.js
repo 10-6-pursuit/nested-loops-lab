@@ -115,16 +115,17 @@ const chessBoard = createChessBoard()
  * @return {Object{}}  The modified board array of objects.
  */
 function addPieceToChessBoard(piece, row, column) {
-
-  for (let square of chessBoard){
-    chessBoard[0][0].piece = piece
-  }
   
-  for (le)
-
+  if (chessBoard[0][0].piece = null){
+    chessBoard[row][column].piece = piece
+  } else {
+    chessBoard[row][column].piece = piece
+  }
+    
   return chessBoard
-
+  
 }
+
 module.exports = {
   getAllArtistNames,
   getAllAlbumTitles,
