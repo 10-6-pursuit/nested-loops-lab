@@ -93,7 +93,7 @@ The `simpleCheckerBoard()` function should return a string of spaces and `#` sym
 str = str + "\n";
 ```
 
-The upper left square should be `light` and the lowere right square should be `light` `" "`
+The upper left square should be `light` and the lower right square should be `light` `" "`
 When you console log your string it should look like this:
 
 ```
@@ -109,11 +109,11 @@ When you console log your string it should look like this:
 
 ### createChessBoard()
 
-The `createChessBoard()` function should return an array of objects that rerpresent a chessboard. A chessboard is 8 x 8 squares.
+The `createChessBoard()` function should return an array of objects that represent a chessboard. A chessboard is 8 x 8 squares.
 
-The objets should have the following properties
+The object should have the following properties
 
-- `piece`: null, the chesssboard should start with no pieces on it. An empty square should have a piece null by default.
+- `piece`: null, the chessboard should start with no pieces on it. An empty square should have a piece null by default.
 - `positionX`: a number from 0 to 7 representing the row, where the top row is 0 and the bottom row is 7
 - `positionY`: a number from 0 to 7 representing the column, where the left column is 0 and the right column is 7
 - `color`: should be the string `light` or `dark`. The upper left square and lower right square should both be light.
