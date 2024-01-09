@@ -1,4 +1,5 @@
 const musicData = require("./data.json");
+const chessBoardObjects = require("./chessboardObjects.json")
 // console.log(musicData);
 
 /**
@@ -89,14 +90,23 @@ function dynamicCheckerBoard(rows, cols) {
   return string;
 }
 
-console.log(dynamicCheckerBoard())
-
+console.log(chessBoardObjects)
 /**
  * Create an array of square objects that represent a chessboard. Please see instructions for more details
  * @return {Object[]} An array of square objects that have the following properties: piece, positionX, positionY, and color.
  */
-function createChessBoard() {}
-
+function createChessBoard() {
+  let array = [];
+  for (let i = 0; i < 8; i++) {
+    let subArray = [];
+    for (let j = 0; j < 8; j++) {
+      subArray.push({ piece: null, positionX: i, positionY: j, color: (i + j) % 2 === 0 ? 'light' : 'dark' });
+    }
+    array.push(subArray);
+  }
+  return array;
+}
+const chessBoard = createChessBoard()
 /**
  * Update a square on the board to have a chess piece "on" it
  * @param {string} piece - An array of guest objects. See the instructions and tests for a full breakdown of what is in each guest object.
@@ -104,8 +114,17 @@ function createChessBoard() {}
  * @param {number} column - An array of guest objects. See the instructions and tests for a full breakdown of what is in each guest object.
  * @return {Object{}}  The modified board array of objects.
  */
-function addPieceToChessBoard(piece, row, column) {}
+function addPieceToChessBoard(piece, row, column) {
 
+  for (let square of chessBoard){
+    chessBoard[0][0].piece = piece
+  }
+  
+  for (le)
+
+  return chessBoard
+
+}
 module.exports = {
   getAllArtistNames,
   getAllAlbumTitles,
