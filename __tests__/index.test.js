@@ -126,7 +126,7 @@ describe("dynamicCheckerBoard()", () => {
   });
 });
 
-describe("createChessBoard()", () => {
+describe.only("createChessBoard()", () => {
   test("it should return an array of square objects that represent a chessboard", () => {
     // checks for return value
     const actual = createChessBoard();
