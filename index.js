@@ -1,5 +1,5 @@
 const musicData = require("./data.json");
-// console.log(musicData);
+console.log(musicData);
 
 /**
  * This function should return an array of just the artist names from the musicData JSON.
@@ -7,6 +7,7 @@ const musicData = require("./data.json");
  * @return {string[]}  An array of strings which are the names of each arist.
  */
 function getAllArtistNames(artists) {}
+
 
 /**
  *  This function should return an array of the artist album titles from the musicData JSON.
