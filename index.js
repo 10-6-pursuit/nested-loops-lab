@@ -35,7 +35,19 @@ function getAllAlbumTitles(artists) {
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of every song from the JSON file.
  */
-function getAllSongs(artists) {}
+function getAllSongs(artists) {
+  const albumSongs = [];
+  for (let i = 0; i < artists.length; i++) {
+
+    for (let j = 0; j < artists[i].albums.length; j++) {
+      let allSongs = artists[i].albums[j].songs;
+      for (let song of allSongs) {
+        albumSongs.push(song);
+      }
+    }
+  }
+  return albumSongs;
+}
 
 /**
  * Create a string that represents a checkboard. See the instructions.md for more details
