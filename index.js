@@ -6,8 +6,10 @@ const musicData = require("./data.json");
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of each arist.
  */
-function getAllArtistNames(artists) {}
-
+function getAllArtistNames(artists) {
+  // SOLVED!
+}
+// Work work work on the lab
 /**
  *  This function should return an array of the artist album titles from the musicData JSON.
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
