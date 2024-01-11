@@ -6,27 +6,85 @@ const musicData = require("./data.json");
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of each arist.
  */
-function getAllArtistNames(artists) {}
+function getAllArtistNames(artists) {
+  const artistNames = [];
+  for (let artist of artists) {
+    artistNames.push(artist.name);
+  }
+  return artistNames;
+}
 
 /**
  *  This function should return an array of the artist album titles from the musicData JSON.
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of each album title from all the artists.
  */
-function getAllAlbumTitles(artists) {}
+//  function getAllAlbumTitles(artists) {
+//    const albumTitles = [];
+//     for (let i = 0; i < artists.length; i++) {
+//      for (let j = 0; j < artists[i].albums.length; j++) {
+//        albumTitles.push(artists[i].albums[j].title);
+//      }
+//     }
+//     return albumTitles;
+//     }
+    function getAllAlbumTitles(artists) {
+     const albumTitles = [];
+     for (let artist of artists) {
+       for (let album of artist.albums) {
+         albumTitles.push(album.title);
+       }
+     }
+     return albumTitles;
+   }
+  
+   
+   
+   
+     
+  
 
+//    for (let artist of artists) {
+//    for (let album of artist.albums) { 
+//     if (album.title) {
+//     albumTitles.push(artist.albums.title);
 /**
  *  This function should return an array of the all the song names from the musicData JSON.
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of every song from the JSON file.
  */
-function getAllSongs(artists) {}
+function getAllSongs(artists) {
+  const nameOfSongs = [];
+   for (let artist of artists) {
+    for (let album of artist.albums) {
+       nameOfSongs.push(...album.songs);
+     }
+   }
+  //  for (let i = 0; i < artists.length; i++) {
+  //    for (let j = 0; j < artists[i].albums.length; j++) {
+  //     nameOfSongs.push(artists[i].albums[j].songs);
+  //   }
+  // }
+  return nameOfSongs;
+}
 
 /**
  * Create a string that represents a checkboard. See the instructions.md for more details
  * @return {string} a string of spaces and # that represent a checkerboard that is 8 x 8.
  */
-function simpleCheckerBoard() {}
+function simpleCheckerBoard() {
+  let checkerBoard = " "
+  for (let i = 0; i < 8; i++) {
+    for (let j = 0; j < 8; j++) {
+      if ((i + j) % 2 === 0) {
+        checkerBoard += " ";
+      } else {
+
+      }
+    }
+  }
+  
+}
 
 /**
  * Create a string that represents a checkboard. See the instructions.md for more details
