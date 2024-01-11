@@ -1,5 +1,5 @@
 const musicData = require("./data.json");
-// console.log(musicData);
+ //console.log(musicData);
 
 /**
  * This function should return an array of just the artist names from the musicData JSON.
@@ -73,32 +73,48 @@ function getAllSongs(artists) {
  * @return {string} a string of spaces and # that represent a checkerboard that is 8 x 8.
  */
 function simpleCheckerBoard() {
-  let checkerBoard = " "
+  let checkerBoard = "";
   for (let i = 0; i < 8; i++) {
     for (let j = 0; j < 8; j++) {
       if ((i + j) % 2 === 0) {
         checkerBoard += " ";
       } else {
-
+checkerBoard += "#";
       }
     }
+    checkerBoard += "\n";
   }
-  
+  return checkerBoard;
 }
+
 
 /**
  * Create a string that represents a checkboard. See the instructions.md for more details
- * @param {number} [rows = 4 ]- An integer that represents the number of rows to create.
+ * @param {number} [rows = 4 ] - An integer that represents the number of rows to create.
  * @param {number} [cols = 4] - An integer that represents the number of columns to create.
  * @return {string} a string of spaces and # that represent a checkerboard that has the appropriate number of rows on columns based on the parameters passed.
  */
-function dynamicCheckerBoard() {}
+function dynamicCheckerBoard() {
+  let checkerBoard = "";
+  let rows = 4;
+  let cols = 4;
+  for (let i = 0; i < rows; i++) {
+    for (let j = 0; j < cols; j++) {
+      checkerBoard += (i + j) % 2 === 0 ? " " : "#";
+    }
+    checkerBoard += "\n";
+  }
+  return checkerBoard;
+}
+
 
 /**
  * Create an array of square objects that represent a chessboard. Please see instructions for more details
  * @return {Object[]} An array of square objects that have the following properties: piece, positionX, positionY, and color.
  */
-function createChessBoard() {}
+function createChessBoard() {
+ 
+}
 
 /**
  * Update a square on the board to have a chess piece "on" it
