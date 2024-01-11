@@ -111,7 +111,34 @@ function dynamicCheckerBoard(rows, cols) {
  * Create an array of square objects that represent a chessboard. Please see instructions for more details
  * @return {Object[]} An array of square objects that have the following properties: piece, positionX, positionY, and color.
  */
-function createChessBoard() {}
+function createChessBoard() {
+  const arrayChessBoard = [];
+  const squareNameLetter = ["A", "B", "C", "D", "E", "F", "G", "H"];
+  const squareNameNumber = ["8", "7", "6", "5", "4", "3", "2", "1"];
+
+    for(let x = 0; x < 8; x++) {
+      const arrayRow = [];
+      arrayChessBoard.push(arrayRow);
+      for(let y = 0; y < 8; y++) {
+        if((x + y) % 2 === 0) {
+          arrayRow.push({piece: null,
+            positionX: x,
+            positionY: y,
+            // squareName: squareNameLetter[x] + squareNameNumber[y],
+            color: "light",
+          });
+        } else {
+            arrayRow.push({piece: null,
+              positionX: x,
+              positionY: y,
+              // squareName: squareNameLetter[x] + squareNameNumber[y],
+              color: "dark",
+            });
+        }
+      }
+    }
+    return arrayChessBoard;
+  }
 
 /**
  * Update a square on the board to have a chess piece "on" it
