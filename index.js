@@ -19,7 +19,17 @@ function getAllArtistNames(artists) {
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of each album title from all the artists.
  */
-function getAllAlbumTitles(artists) {}
+function getAllAlbumTitles(artists) {
+  const albumNames = [];
+  for(let i = 0; i < artists.length; i++){
+    if(artists[i].albums) {
+      for(let j = 0; j < artists[i].albums.length; j++) {
+      albumNames.push(artists[i].albums[j].title);
+      }
+    }
+  }
+  return albumNames;
+}
 
 /**
  *  This function should return an array of the all the song names from the musicData JSON.
