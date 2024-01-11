@@ -118,15 +118,10 @@ function createChessBoard() {
  * @return {Object{}}  The modified board array of objects.
  */
 function addPieceToChessBoard(piece, row, column) {
-  const chessBoard = createChessBoard()
-  for (let i = 0; i < chessBoard.length; i++){
-    for (let j = 0; j < chessBoard[i].length; j++){
-      if (i === row && j === column) {
-        chessBoard[i][j].piece = piece
-      }
-    }
-  }
-  return chessBoard
+	const chessBoard = createChessBoard();
+	chessBoard[row][column].piece = piece;
+
+	return chessBoard;
 }
 
 module.exports = {
