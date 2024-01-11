@@ -114,9 +114,9 @@ function createChessBoard(row = 8, column = 8) {
  * @return {Object{}}  The modified board array of objects.
  */
 function addPieceToChessBoard(piece, row, column) {
-  // const chessboard = createChessBoard();  
-  //   chessboard[row][column].piece = piece;
-  //   return chessboard;
+  const chessboard = createChessBoard();  
+    chessboard[row][column].piece = piece;
+    return chessboard;
 }
 
 module.exports = {
