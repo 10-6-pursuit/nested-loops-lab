@@ -1,11 +1,10 @@
 const musicData = require("./data.json");
 // console.log(musicData);
 
-/**
- * This function should return an array of just the artist names from the musicData JSON.
- * @param {Object[]} artists - An array of objects. See the JSON file for more details.
+ /* @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of each arist.
  */
+
 function getAllArtistNames(artists) {
   const array = []; 
   for ( let i = 0; i < artists.length; i++ ) {
@@ -22,6 +21,7 @@ function getAllArtistNames(artists) {
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of each album title from all the artists.
  */
+
 function getAllAlbumTitles(artists) {
   const array1 = []; 
   for ( let i = 0; i < artists.length; i++ ) {
@@ -56,6 +56,7 @@ function getAllAlbumTitles(artists) {
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of every song from the JSON file.
  */
+
 function getAllSongs(artists) {
   const array2 = [];
 for (let i = 0; i < artists.length; i++) {
@@ -72,6 +73,7 @@ for (let i = 0; i < artists.length; i++) {
  * Create a string that represents a checkboard. See the instructions.md for more details
  * @return {string} a string of spaces and # that represent a checkerboard that is 8 x 8.
  */
+
 function simpleCheckerBoard() {
  // string is iterated by each character 
   let str = "";
@@ -97,7 +99,8 @@ function simpleCheckerBoard() {
  * @param {number} [cols = 4] - An integer that represents the number of columns to create.
  * @return {string} a string of spaces and # that represent a checkerboard that has the appropriate number of rows on columns based on the parameters passed.
  */
-function dynamicCheckerBoard(rows,cols) {
+
+function dynamicCheckerBoard(rows= 4,cols = 4) {
 // 4 by 4 (2D array)
   // assign empty string to variable 
 // interate over rows (outer loop) 
@@ -105,7 +108,8 @@ function dynamicCheckerBoard(rows,cols) {
 // condition loop with if statement 
 //excute code in if statement block of code. 
 
-  let str = ""; 
+ let str = ""; 
+// 4 by 4 (2D array)
 
   for (let i = 0; i < rows; i++){
    //npm test console.log(rows); 
@@ -124,7 +128,7 @@ function dynamicCheckerBoard(rows,cols) {
     }
 
   return str;
-}
+  }
 
 /**
  * Create an array of square objects that represent a chessboard. Please see instructions for more details
@@ -163,6 +167,7 @@ const obj = {
  * @param {number} column - An array of guest objects. See the instructions and tests for a full breakdown of what is in each guest object.
  * @return {Object{}}  The modified board array of objects.
  */
+
 function addPieceToChessBoard(piece, row, column) {
   let dimensionArea = 8; 
   const arrChessBoard = [];
@@ -189,7 +194,6 @@ const obj = {
 
       return arrChessBoard;   
     }   
-
 
 module.exports = {
   getAllArtistNames,
