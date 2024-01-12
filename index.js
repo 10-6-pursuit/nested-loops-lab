@@ -8,7 +8,11 @@ const chessBoardObjects = require("./chessboardObjects.json")
  * @return {string[]}  An array of strings which are the names of each arist.
  */
 function getAllArtistNames(artists) {
-  return artists.map(ele => ele["name"])
+  let outPut = []
+  for (let artist of artists){
+    outPut.push(artist.name)
+  }
+  return outPut
 }
 
 /**
@@ -90,7 +94,6 @@ function dynamicCheckerBoard(rows, cols) {
   return string;
 }
 
-console.log(chessBoardObjects)
 /**
  * Create an array of square objects that represent a chessboard. Please see instructions for more details
  * @return {Object[]} An array of square objects that have the following properties: piece, positionX, positionY, and color.
