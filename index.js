@@ -113,7 +113,15 @@ function dynamicCheckerBoard() {
  * @return {Object[]} An array of square objects that have the following properties: piece, positionX, positionY, and color.
  */
 function createChessBoard() {
- 
+ const chessBoard = [];
+  for (let i = 0; i < 8; i++) {
+  for (let j = 0; j < 8; j++) {
+    const color = (i + j) % 2 === 0 ? 'light' : 'dark';
+    const square = {piece: null, positionX: j, positionY: i, color: color};
+    chessBoard.push(square);
+  }
+ }
+ return chessBoard;
 }
 
 /**
@@ -123,7 +131,22 @@ function createChessBoard() {
  * @param {number} column - An array of guest objects. See the instructions and tests for a full breakdown of what is in each guest object.
  * @return {Object{}}  The modified board array of objects.
  */
-function addPieceToChessBoard(piece, row, column) {}
+function addPieceToChessBoard(piece, row, column) {
+  const chessBoard = [];
+  for (let i = 0; i < row; i++) {
+  const rowArr = [];
+  for (let j = 0; j < column; j++) { 
+    const color = (i+j) % 2 === 0 ? "light" : "dark";
+    const square = {piece: null, positionX: j, positionY: i, color: color};
+if (i === row && j === column) {
+  square.piece = piece;
+}
+rowArr.push(square);
+  }
+  chessBoard.push(rowArr);
+}
+return chessBoard;
+}
 
 module.exports = {
   getAllArtistNames,
