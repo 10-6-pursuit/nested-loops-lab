@@ -122,7 +122,7 @@ function createChessBoard() {
 }
 
 const chessboard = createChessBoard();
-console.log(chessboard);
+
 
 /**
  * Update a square on the board to have a chess piece "on" it
@@ -132,13 +132,12 @@ console.log(chessboard);
  * @return {Object{}}  The modified board array of objects.
  */
 function addPieceToChessBoard(piece, row, column) {
-  const chessBoardSize = 8;
+  const chessboard = createChessBoard();
 
-  if (row >= 0 && row < chessboard.length && column >= 0 && column < chessboard[row].length) {
-      chessboard[row][column].piece = piece;
-  }
-
+  chessboard[row][column].piece = piece;
+  
   return chessboard;
+
 }
 
 module.exports = {
