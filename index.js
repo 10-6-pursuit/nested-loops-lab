@@ -6,27 +6,67 @@ const musicData = require("./data.json");
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of each arist.
  */
-function getAllArtistNames(artists) {}
+function getAllArtistNames(artists) {
+  acc = []
+ 
+  for (let artist of artists) {
+    const artistName = artist.name 
+    acc.push(artistName);
+  }
+  return acc;
+}
 
 /**
  *  This function should return an array of the artist album titles from the musicData JSON.
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of each album title from all the artists.
  */
-function getAllAlbumTitles(artists) {}
+function getAllAlbumTitles(artists) {
+  acc = []
+
+  for (let artist of artists) {
+    const albums = artist.albums 
+
+    for (let album of albums )
+     acc.push(album.title)
+    
+  }
+    
+
+  return acc
+}
 
 /**
  *  This function should return an array of the all the song names from the musicData JSON.
  * @param {Object[]} artists - An array of objects. See the JSON file for more details.
  * @return {string[]}  An array of strings which are the names of every song from the JSON file.
  */
-function getAllSongs(artists) {}
+function getAllSongs(artists) {
+  let acc = []
+ for (let artist of artists) {
+  const albums = artist.albums
+
+  for (let album of albums) {
+    const songs = album.songs
+
+    for (let song of songs) {
+      acc.push(song);
+    }
+  }
+
+ }
+
+  return acc
+}
 
 /**
  * Create a string that represents a checkboard. See the instructions.md for more details
  * @return {string} a string of spaces and # that represent a checkerboard that is 8 x 8.
  */
-function simpleCheckerBoard() {}
+function simpleCheckerBoard() {
+
+  
+}
 
 /**
  * Create a string that represents a checkboard. See the instructions.md for more details
