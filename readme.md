@@ -87,7 +87,7 @@ There can be any number of artists, any artist can have any number of albums and
 
 ### simpleChekcerBoard()
 
-The `simpleCheckerBoard()` function should return a string of spaces and `#` symbols that represent a checkerboard. A checkerboard is 8 x 8 squares. The light squares should be represented by `" "` and the dark squares should be represented by `#`. To create a new line the characters `\n` should be added.
+The `simpleCheckerBoard()` function should return a string of spaces and `#` symbols that represent a checkerboard. A checkerboard is 8 x 8 squares. The light squares should be represented by `" "` and the dark squares should be represented by `#`. To crea te a new line the characters `\n` should be added.
 
 ```js
 str = str + "\n";
