@@ -38,7 +38,7 @@ function getAllSongs(artists) {
   let allSongs = [];
   for (let artist of artists){
     for (let albums of artist.albums){
-      allSongs.push(albums.songs);
+      allSongs.push(...albums.songs);
     }
   }
 return allSongs;
@@ -71,6 +71,12 @@ function simpleCheckerBoard() {
  */
 function dynamicCheckerBoard(rows, cols) {
   let checkboard = "", light = " ", dark = "#";
+  if(rows === undefined){
+    rows = 4;
+    if(cols === undefined){
+      cols = 4;
+    }
+  }
   for(let i = 0; i < rows; i++){
     for(let j = 0; j < cols; j++){
       if((i + j) % 2 === 0){
@@ -99,8 +105,8 @@ function createChessBoard() {
         positionX: i,
         positionY: j,
       });
-      chessBoard.push(row);
     }
+    chessBoard.push(row);
   }
   return chessBoard;
 }
@@ -113,15 +119,13 @@ function createChessBoard() {
  * @return {Object{}}  The modified board array of objects.
  */
 function addPieceToChessBoard(piece, row, column) {
-  for(let i = 0; i < 8; i++){
-    if(row === i){
-      for(let j = 0; j < 8; i++){
-        if(column = j){
-          
-        }
-      }
+  let newChessBoard = createChessBoard();
+  for(let i = 0; i < newChessBoard.length; i++){
+    for(let j = 0; j < newChessBoard.length; j++){
+      newChessBoard[row][column]["piece"] = piece;
     }
   }
+  return newChessBoard;
 }
 
 module.exports = {
