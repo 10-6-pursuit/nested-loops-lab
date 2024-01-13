@@ -106,7 +106,6 @@ function createChessBoard() {
         piece: null, 
         positionX: size - i - 1,
         positionY: j,
-        squareName: String.fromCharCode(65 + col) + (8 - row)
         color: squareColor,
       };
       row.push(square);
@@ -137,7 +136,6 @@ function addPieceToChessBoard(piece, row, column) {
         piece: null, 
         positionX: size - i - 1,
         positionY: j,
-        squareName: String.fromCharCode(65 + col) + (8 - row)
         color: squareColor,
       };
       rowsArray.push(square);
