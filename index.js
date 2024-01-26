@@ -146,7 +146,43 @@ function createChessBoard() {
  * @param {number} column - An array of guest objects. See the instructions and tests for a full breakdown of what is in each guest object.
  * @return {Object{}}  The modified board array of objects.
  */
-function addPieceToChessBoard(piece, row, column) { }
+function addPieceToChessBoard(piece, givenRow, givenColumn) {
+  let chessBoard = [], toss = false, white = "light", black = "dark",
+    block = {
+      piece: null,
+      positionX: 0,
+      positionY: 0,
+      color: "light"
+      //squareName: "",
+    }, color, row, squareLabels = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+
+  for (let i = 0; i < 8; i++) {
+    toss = !toss;
+    row = [];
+    for (let j = 0; j < 8; j++) {
+      if (toss)
+        color = white;
+      else
+        color = black;
+      toss = !toss;
+
+      block = {
+        piece: null,
+        positionX: i,
+        positionY: j,
+        color: color
+        //squareName: `${squareLabels[i]}${j}`
+      };
+
+      row.push(block);
+    }
+    chessBoard.push(row);
+
+  }
+  chessBoard[givenRow][givenColumn].piece = piece;
+  console.log(chessBoard);
+  return chessBoard;
+}
 
 module.exports = {
   getAllArtistNames,
