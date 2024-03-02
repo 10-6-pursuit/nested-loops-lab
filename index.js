@@ -1,4 +1,12 @@
 const musicData = require("./data.json");
+//for (variable in object) {
+    //what i want he loop to do
+//}
+//const myFunction = (param1, param2) => {
+    // what i want the function to do
+//};
+
+
 // console.log(musicData);
 
 /**
@@ -55,7 +63,13 @@ function getAllSongs(artists) {
  * Create a string that represents a checkboard. See the instructions.md for more details
  * @return {string} a string of spaces and # that represent a checkerboard that is 8 x 8.
  */
-function simpleCheckerBoard() {}
+function simpleCheckerBoard() {
+  let board = [];
+  for(let i = 0; i < 8; i++){
+    i % 2 === 0 ?  board.push(" # # # #\n") : board.push("# # # # \n")
+  }
+  return board.join("")
+}
 
 /**
  * Create a string that represents a checkboard. See the instructions.md for more details
@@ -63,14 +77,52 @@ function simpleCheckerBoard() {}
  * @param {number} [cols = 4] - An integer that represents the number of columns to create.
  * @return {string} a string of spaces and # that represent a checkerboard that has the appropriate number of rows on columns based on the parameters passed.
  */
-function dynamicCheckerBoard() {}
+function dynamicCheckerBoard(rows = 4 ,cols = 4) {
+  let board = "";
+
+  for (let i = 0; i < rows; i++) {
+    for (let j = 0; j < cols; j++) {
+      if ((i + j) % 2 === 0) {
+        board += " "; 
+      } else {
+        board += "#"; 
+      }
+    }
+    board += "\n"; 
+  }
+
+  return board;
+}
 
 /**
  * Create an array of square objects that represent a chessboard. Please see instructions for more details
  * @return {Object[]} An array of square objects that have the following properties: piece, positionX, positionY, and color.
  */
-function createChessBoard() {}
+// //- `piece`: null, the chesssboard should start with no pieces on it. An empty square should have a piece null by default.
+// - `positionX`: a number from 0 to 7 representing the row, where the top row is 0 and the bottom row is 7
+// - `positionY`: a number from 0 to 7 representing the column, where the left column is 0 and the right column is 7
+// - `color`: should be the string `light` or `dark`. The upper left square and lower right square should both be light.
+function createChessBoard() {
+  const board = [];
+  for (let i = 0; i < 8; i++) {
+    let row = [];
 
+    
+    for (let j = 0; j < 8; j++) {
+      const square = {
+        piece: null,
+        positionX: i,
+        positionY : j,
+        color: ((i + j) % 2 === 0 ? "light"   : "dark")
+      }
+      row.push(square);
+    }
+    board.push(row);
+  }
+  return board;
+}
+//object odd = {}
+//odd.color = white
 /**
  * Update a square on the board to have a chess piece "on" it
  * @param {string} piece - An array of guest objects. See the instructions and tests for a full breakdown of what is in each guest object.
@@ -78,7 +130,20 @@ function createChessBoard() {}
  * @param {number} column - An array of guest objects. See the instructions and tests for a full breakdown of what is in each guest object.
  * @return {Object{}}  The modified board array of objects.
  */
-function addPieceToChessBoard(piece, row, column) {}
+function addPieceToChessBoard(piece, row, column) {
+  // const board = [];
+  const board = createChessBoard();
+  for (let i = 0; i < board.length; i++) {
+      // board.push(new Array(8).fill('.'));
+      for (const square of board[i]) {
+        if (square.positionX === row && square.positionY === column ) {
+          square.piece = piece
+        }  
+      }
+  }
+  console.log(board);
+  return board;
+}
 
 module.exports = {
   getAllArtistNames,
